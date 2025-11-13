@@ -12,7 +12,7 @@ const App = () => {
 
   const fetchOrders = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/orders");
+      const res = await axios.get("https://sweet-crust-backend.onrender.com/api/orders");
       setOrders(res.data);
       setFiltered(res.data);
     } catch (error) {
