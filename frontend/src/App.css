@@ -1,0 +1,27 @@
+.app-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--bg);
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.app-header img {
+  width: 60px;
+  height: 60px;
+}
+
+h1 {
+  color: var(--accent);
+  text-align: center;
+  margin: 0;
+}
