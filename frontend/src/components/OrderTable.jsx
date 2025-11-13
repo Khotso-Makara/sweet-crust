@@ -5,13 +5,13 @@ import "./OrderTable.css";
 const OrderTable = ({ orders, refresh }) => {
   const toggleStatus = async (id, currentStatus) => {
     const newStatus = currentStatus === "Pending" ? "Completed" : "Pending";
-    await axios.put(`http://localhost:5000/api/orders/${id}`, { status: newStatus });
+    await axios.put(`https://sweet-crust-backend.onrender.com/api/orders/${id}`, { status: newStatus });
     refresh();
   };
 
   const deleteOrder = async (id) => {
     if (window.confirm("Are you sure you want to delete this order?")) {
-      await axios.delete(`http://localhost:5000/api/orders/${id}`);
+      await axios.delete(`https://sweet-crust-backend.onrender.com/api/orders/${id}`);
       refresh();
     }
   };
