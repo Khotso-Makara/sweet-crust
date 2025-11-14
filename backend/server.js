@@ -6,7 +6,7 @@ const Order = require("./models/Order");
 
 const app = express();
 app.use(cors(
-  origin: ["https:/https://sweet-crust-backend.onrender.com"]
+  origin: ["https://sweet-crust-backend.onrender.com"]
 ));
 app.use(express.json());
 
