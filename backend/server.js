@@ -5,7 +5,9 @@ const cors = require("cors");
 const Order = require("./models/Order");
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  origin: ["https:/https://sweet-crust-backend.onrender.com"]
+));
 app.use(express.json());
 
 const MONGO_URI =
